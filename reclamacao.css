@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background-image: url(/assets/conteudo/reclamacao.png);
+    color: #333333;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #900020;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+h2 {
+    color: #900020;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    color: #900020;
+}
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+    width: 100%;
+    padding: 9px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+.form-group textarea {
+    height: 100px;
+    resize: none;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #900020;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.form-group button:hover {
+    background-color: #740018;
+}
+
+#voltar {
+    text-decoration: none;
+    color: #740018;
+    font-family: nunito;
+    font-size: 15px;
+    font-style: normal;
+}
+
+#footer {
+    background-color: #800000;
+    color: aliceblue;
+    font-family: nunito;
+    text-align: center;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .form-group select {
+        padding: 7px;
+    }
+
+    .form-group button {
+        padding: 8px;
+    }
+}

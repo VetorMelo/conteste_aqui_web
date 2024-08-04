@@ -1,0 +1,268 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+nav {
+    background-color: #800000; /* Vinho */
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.logo {
+    font-size: 24px;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    align-items: center; /* Alinha os itens no centro verticalmente */
+    margin: 0;
+    padding: 0;
+    margin-right: 60px;
+}
+
+.nav-links li {
+    margin-left: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.nav-links a:hover {
+    color: #ffcccb; /* Slight color change on hover */
+}
+
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-btn {
+    background-color: #800000; /* Mesma cor da navbar */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.dropdown-btn i {
+    margin-left: 5px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #800000; /* Mesma cor da navbar */
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 16px;
+}
+
+.dropdown-content a:hover {
+    background-color: #ffcccb; /* Slight color change on hover */
+}
+
+.dropdown-menu:hover .dropdown-content {
+    display: block;
+}
+
+.search {
+    background-color: #800000; /* Mesma cor do fundo da navbar */
+    color: rgba(255, 255, 255, 0.5); /* Letras quase transparentes */
+    border: none;
+    border-bottom: 1px solid white; /* Para um visual de borda inferior */
+    padding: 5px 10px;
+    outline: none;
+    font-size: 16px;
+}
+
+.search::placeholder {
+    color: rgba(255, 255, 255, 0.5); /* Placeholder quase transparente */
+}
+
+.content {
+    margin-top: 60px;
+    padding: 20px;
+}
+
+#pesquisar {
+    display: flex;
+    margin-left: 10px;
+    margin-top: 30px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: #8d3030;
+    color: rgb(255, 255, 255, 0.8);
+    font-style: oblique;
+    font-size: medium;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#pesquisar:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+    color: #800000;
+}
+
+#title {
+    text-align: center;
+    margin-top: 80px;
+}
+
+#causa {
+    margin-left: 30px;
+    margin-top: 80px;
+}
+
+#importancia {
+    margin-right: 120px;
+    margin-top: 60px;
+    text-align: right;
+}
+
+#causar {
+    margin-left: 10px;
+    margin-right: 30px;
+    font-family: nunito;
+    font-size: 19px;
+    text-align: justify; 
+}
+
+#clienteimg {
+    display: flex;
+    height: 400px;
+    width: 700px;
+    border-radius: 1px 100px 1px 20px;
+}
+
+#comunicacao {
+    height: 500px;
+    width: 700px;
+    border-radius: 100px 1px 20px 1px;
+}
+
+#comunicacao2 {
+    margin-left: 30px;
+    margin-right: 10px;
+    font-family: nunito;
+    font-size: 19px;
+    text-align: justify;
+}
+
+.container {
+    display: flex;
+    align-items: flex-start; /* Alinha os itens no topo */
+    padding: 20px;
+}
+
+.side-image {
+    max-width: 150px; /* Ajuste conforme necessário */
+    margin-right: 20px; /* Espaço entre a imagem e o texto */
+}
+
+#footer {
+    background-color: #800000;
+    color: aliceblue;
+    font-family: nunito;
+    text-align: center;
+}
+
+.shrink {
+    padding: 5px 20px;
+}
+
+/* Responsividade para celulares */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .nav-links li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .search {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .content {
+        margin-top: 100px;
+    }
+
+    #pesquisar {
+        margin-left: 0;
+        margin-top: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    #title,
+    #causa,
+    #importancia,
+    #causar,
+    #comunicacao2 {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #clienteimg,
+    #comunicacao {
+        width: 100%;
+        height: auto;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .side-image {
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+}
