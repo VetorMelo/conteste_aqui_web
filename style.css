@@ -5,7 +5,7 @@ body, html {
 }
 
 nav {
-    background-color: #800000; /* Vinho */
+    background-color: #800000;
     color: white;
     display: flex;
     justify-content: space-between;
@@ -41,7 +41,7 @@ nav {
 }
 
 .nav-links a:hover {
-    color: #ffcccb; /* Slight color change on hover */
+    color: #ffcccb; 
 }
 
 .menu-icon {
@@ -85,7 +85,7 @@ nav {
 }
 
 .dropdown-content a:hover {
-    background-color: #ffcccb; /* Slight color change on hover */
+    background-color: #ffcccb; 
 }
 
 .dropdown-menu:hover .dropdown-content {
@@ -103,8 +103,7 @@ nav {
 }
 
 .search::placeholder {
-    color: rgba(255, 255, 255, 0.5); /* Placeholder quase transparente */
-}
+    color: rgba(255, 255, 255, 0.5); 
 
 .content {
     margin-top: 60px;
